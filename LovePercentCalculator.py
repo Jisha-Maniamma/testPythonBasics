@@ -19,9 +19,9 @@ score = (t + r + u + e) * 10 + (l + o + v + e)
 print(f"{first_name.upper()} and {second_name.upper()} , your compatibility is {score}")
 
 message = "you score is " + str(score)
-if score < 10 or score > 90:
+if (score < 10) or (score > 90):
     print(f"{message}, you go together like coke and mentos")
-elif 40 <= score <= 50:
+elif (40 <= score <= 50):
     print(f"{message}, you are alright together")
 else:
     print(message)
