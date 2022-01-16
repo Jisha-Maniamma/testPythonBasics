@@ -6,4 +6,4 @@ random_Number = random.randint(0, len(names));
 
 # print(names)
 
-print(f"th ransomly selected frind who would pay bill is- {names[random_Number]}")
+print(f"th randomly selected friend who would pay bill is- {names[random_Number]}")
