@@ -5,9 +5,9 @@
 
 # using...
 
-.count('c')
-len()
-sum()
+.count('c') <br>
+len()<br>
+sum()<br>
 print(f"   {}")
 str()
 int()
