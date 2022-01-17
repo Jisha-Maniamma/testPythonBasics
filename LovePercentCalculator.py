@@ -1,6 +1,7 @@
 #
 # Author- Jisha Maniamma
 # To check your compatibility with your partner in percentage
+# using count('')
 #
 first_name = input("enter the first name \n").lower()
 second_name = input("enter the second name \n").lower()
