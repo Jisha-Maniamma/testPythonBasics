@@ -8,4 +8,4 @@ random_Number = random.randint(0, len(names)-1);
 # print(names)
 
 # print("name of restaurant is "+treasureHunt.Restaurant_name)
-print(f"th randomly selected friend who would pay bill is- {names[random_Number]}")
+print(f"the randomly selected friend who would pay bill is- {names[random_Number]}")
