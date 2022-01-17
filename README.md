@@ -19,10 +19,12 @@ round( ,2)<br>
 split()<br>
 split(",")<br>
 max( LIST )<br>
-min( LIST)<br>
-<br>
+min( LIST)<br><br>
+------------<br>
 for  x in Xs:<br>
   .......<br>
+  <br>
+  -------------
   <br>
  if ***:<br>
     .....<br>
