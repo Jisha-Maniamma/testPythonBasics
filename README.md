@@ -24,8 +24,7 @@ min( LIST)<br><br>
 for  x in Xs:<br>
   .......<br>
   <br>
-  -------------
-  <br>
+------------<br>
  if ***:<br>
     .....<br>
  elif ***:<br>
