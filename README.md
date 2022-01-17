@@ -6,8 +6,8 @@
 # using...
 
 .count('c') <br>
-len()<br>
-sum()<br>
+len( LIST )<br>
+sum( LIST )<br>
 print(f"   {}")<br>
 str()<br>
 int()<br>
@@ -16,3 +16,17 @@ random.randint(min, max)<br>
 random.random()  0 and 1<br>
 round()<br>
 round( ,2)<br>
+split()<br>
+split(",")<br>
+max( LIST )<br>
+min( LIST)<br>
+<br>
+for  x in Xs:<br>
+  .......<br>
+  <br>
+ if ***:<br>
+    .....<br>
+ elif ***:<br>
+     ....<br>
+ else:<br>
+    ....<br>
