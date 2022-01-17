@@ -15,3 +15,5 @@ for number in range(min_range, max_range + 1, steps):
     sum += number
 
 print(f"the sum of numbers in range [{min_range} to {max_range} with steps {steps}] is- {sum}")
+
+
