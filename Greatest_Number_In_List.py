@@ -4,7 +4,7 @@ for i in range(0, len(number)):
     number[i] = int(number[i])
 
 print(number)
-max_number = 0;
+max_number = 0
 for num in number:
     print(f"{max_number} and {num}")
     if max_number < num:
