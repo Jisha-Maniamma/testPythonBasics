@@ -8,11 +8,11 @@
 .count('c') <br>
 len()<br>
 sum()<br>
-print(f"   {}")
-str()
-int()
-float()
-random.randint(min, max)
-random.random()  0 and 1
-round()
-round( ,2)
+print(f"   {}")<br>
+str()<br>
+int()<br>
+float()<br>
+random.randint(min, max)<br>
+random.random()  0 and 1<br>
+round()<br>
+round( ,2)<br>
