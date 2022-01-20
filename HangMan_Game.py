@@ -1,7 +1,7 @@
 import random
 print("Welcome to Hangman game!")
-
-words=["Business","Portfolio","Adjustment"]
+#business portfolio
+words=["bus","port","adjustment"]
 
 random_Selected_Word=random.choice(words)
 To_fill_word=[]
@@ -15,4 +15,10 @@ for i in range(len(random_Selected_Word)):
 
 
 print(f"Kindly start guessing for {To_fill}")
-# UserInput=print("Enter a character to guess")
+UserInput=input("Enter a character to guess").lower()
+
+for char in random_Selected_Word:
+    if(UserInput==char):
+        print("correct")
+    else:
+        print("wong")
