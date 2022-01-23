@@ -15,11 +15,13 @@ for i in range(len(random_Selected_Word)):
 
 
 print(f"Kindly start guessing for {To_fill} {To_fill_word}")
-UserInput = input("Enter a character to guess").lower()
 
-for position in range(len(random_Selected_Word)):
-    if random_Selected_Word[position] == UserInput:
+while not (To_fill_word.count('_')==0):
+    UserInput = input("Enter a character to guess").lower()
+    for position in range(len(random_Selected_Word)):
+      if random_Selected_Word[position] == UserInput:
         To_fill_word[position] = UserInput
     # print(f"correct  ")
+        print(f"Kindly start guessing for  {To_fill_word}")
 
-print(f"Kindly start guessing for  {To_fill_word}")
+
