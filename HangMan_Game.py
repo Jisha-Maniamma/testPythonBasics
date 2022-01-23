@@ -21,6 +21,8 @@ while not (To_fill_word.count('_')==0):
     for position in range(len(random_Selected_Word)):
       if random_Selected_Word[position] == UserInput:
         To_fill_word[position] = UserInput
+      else:
+        print("sorry enter letter again")
     # print(f"correct  ")
         print(f"Kindly start guessing for  {To_fill_word}")
 
