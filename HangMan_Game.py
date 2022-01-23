@@ -16,9 +16,9 @@ for i in range(len(random_Selected_Word)):
 
 print(f"Kindly start guessing for {To_fill} {To_fill_word}")
 
-#
-#  SOLUTION-1
-#
+###############################################
+#          SOLUTION-1
+###############################################
 # while not (To_fill_word.count('_')==0):
 #     UserInput = input("Enter a character to guess").lower()
 #     for position in range(len(random_Selected_Word)):
@@ -29,9 +29,9 @@ print(f"Kindly start guessing for {To_fill} {To_fill_word}")
 #     # print(f"correct  ")
 #         print(f"Kindly start guessing for  {To_fill_word}")
 
-#
-#  SOLUTION-2
-#
+###############################################
+#            SOLUTION-2
+###############################################
 end_of_game = False;
 while not end_of_game:
     UserInput = input("Enter a character to guess").lower()
