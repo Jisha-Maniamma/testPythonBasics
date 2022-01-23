@@ -2,7 +2,7 @@ import random
 
 print("Welcome to Hangman game!")
 # business portfolio
-words = ["buus", "poprt", "adjustament"]
+words = ["bus", "port", "adjustment"]
 
 random_Selected_Word = random.choice(words)
 To_fill_word = []
