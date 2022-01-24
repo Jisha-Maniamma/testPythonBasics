@@ -1,5 +1,62 @@
 import random
 
+stages = ['''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ / \  |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ /    |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+      |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+ /|   |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+  |   |
+      |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+      |
+      |
+      |
+=========
+''', '''
+  +---+
+  |   |
+      |
+      |
+      |
+      |
+=========
+''']
+
 print("Welcome to Hangman game!")
 # business portfolio
 words = ["bus", "port", "adjustment"]
@@ -12,7 +69,7 @@ for i in range(len(random_Selected_Word)):
     To_fill += "_ "
 
 # print(To_fill)
-
+Player_life = 6
 
 print(f"Kindly start guessing for {To_fill} {To_fill_word}")
 
