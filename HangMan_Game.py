@@ -97,12 +97,11 @@ while not end_of_game:
         if random_Selected_Word[position] == UserInput:
             To_fill_word[position] = UserInput
 
-
-
     if '_' not in To_fill_word:
         end_of_game = True;
     if UserInput not in random_Selected_Word:
         Player_life -= 1
+        print(stages[Player_life])
     if Player_life == 0:
         end_of_game = True
         print("you loose the game!")
