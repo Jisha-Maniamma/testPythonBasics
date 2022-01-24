@@ -69,6 +69,7 @@ for i in range(len(random_Selected_Word)):
     To_fill += "_ "
 
 # print(To_fill)
+# life available
 Player_life = 6
 
 print(f"Kindly start guessing for {To_fill} {To_fill_word}")
