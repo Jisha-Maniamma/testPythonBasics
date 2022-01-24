@@ -111,17 +111,15 @@ while not end_of_game:
                 To_fill_word[position] = UserInput
                 print(f"your guess is corect {To_fill_word}, Continue! life left -{Player_life} ")
 
-
-
-
-
-    elif UserInput not in random_Selected_Word:
-        Player_life -= 1
-        print(f"you guessed {UserInput}, ths is not in the word so you loose a life! ")
-        print(f"{stages[Player_life]}")
     else:
         Player_life -= 1
         print(f"you already had guessed {UserInput}, so you loose a life! ")
+        print(f"{stages[Player_life]}")
+
+    if UserInput not in random_Selected_Word:
+        Player_life -= 1
+        print(f"you guessed {UserInput}, ths is not in the word so you loose a life! ")
+        print(f"{stages[Player_life]}")
 
     if '_' not in To_fill_word:
         end_of_game = True;
