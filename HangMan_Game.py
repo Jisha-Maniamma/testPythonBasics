@@ -96,8 +96,12 @@ while not end_of_game:
     for position in range(len(random_Selected_Word)):
         if random_Selected_Word[position] == UserInput:
             To_fill_word[position] = UserInput
+        else:
+            Player_life -= 1
 
     if '_' not in To_fill_word:
+        end_of_game = True;
+    if Player_life == 0:
         end_of_game = True;
 
     print(f"Kindly start guessing for  {To_fill_word}")
