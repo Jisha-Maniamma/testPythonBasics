@@ -100,20 +100,31 @@ print(f"Kindly start guessing for {To_fill} {To_fill_word}")
 ###############################################
 #            SOLUTION-2
 ###############################################
-end_of_game = False;
+already_guessed=[]
+end_of_game = False
 while not end_of_game:
     UserInput = input("Enter a character to guess").lower()
-    for position in range(len(random_Selected_Word)):
-        if random_Selected_Word[position] == UserInput:
-            To_fill_word[position] = UserInput
+    if UserInput not in already_guessed:
+        already_guessed.append(UserInput)
+        for position in range(len(random_Selected_Word)):
+            if random_Selected_Word[position] == UserInput:
+                To_fill_word[position] = UserInput
+                print(f"your guess is corect {To_fill_word}, Continue! life left -{Player_life} ")
+
+
+
+
+
+    else:
+        Player_life -= 1
+        print(f"you already had guessed {UserInput}, so you loose a life! ")
 
     if '_' not in To_fill_word:
         end_of_game = True;
     if UserInput not in random_Selected_Word:
         Player_life -= 1
-        print(stages[Player_life])
+        print(f"you guessed {UserInput}, ths is not in the word so you loose a life! ")
     if Player_life == 0:
         end_of_game = True
         print("you loose the game!")
-
-    print(f"Kindly start guessing for  {To_fill_word}  life {Player_life}")
+    # print(f"Kindly start guessing for  {To_fill_word}  life {Player_life}")
