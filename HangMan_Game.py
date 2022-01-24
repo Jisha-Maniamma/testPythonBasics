@@ -104,6 +104,7 @@ while not end_of_game:
     if UserInput not in random_Selected_Word:
         Player_life -= 1
     if Player_life == 0:
-        end_of_game = True;
+        end_of_game = True
+        print("you loose the game!")
 
     print(f"Kindly start guessing for  {To_fill_word}  life {Player_life}")
