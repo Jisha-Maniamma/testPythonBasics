@@ -1,6 +1,6 @@
 import random
 from __init__ import Random_names,stages,logo
-
+import os
 
 print("Welcome to Hangman game!")
 print(logo)
@@ -40,6 +40,7 @@ already_guessed = []
 end_of_game = False
 while not end_of_game:
     UserInput = input("Enter a character to guess").lower()
+    clear = lambda: os.system('cls')
     if UserInput not in already_guessed:
         already_guessed.append(UserInput)
         for position in range(len(random_Selected_Word)):
