@@ -1,5 +1,5 @@
 import random
-
+from __init__ import Random_names
 logo = ''' 
  _                                             
 | |                                            
@@ -69,9 +69,9 @@ stages = ['''
 
 print("Welcome to Hangman game!")
 # business portfolio
-words = ["bus", "port", "adjustment"]
+# words = ["bus", "port", "adjustment"]
 
-random_Selected_Word = random.choice(words)
+random_Selected_Word = random.choice(Random_names)
 To_fill_word = []
 To_fill = ""
 for i in range(len(random_Selected_Word)):
@@ -122,6 +122,7 @@ while not end_of_game:
         print(f"{stages[Player_life]}")
 
     if '_' not in To_fill_word:
+        print("You win!")
         end_of_game = True;
 
     if Player_life == 0:
