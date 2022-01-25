@@ -12,6 +12,7 @@ logo = '''
 
 
 print("Welcome to Hangman game!")
+print(logo)
 # business portfolio
 # words = ["bus", "port", "adjustment"]
 
@@ -67,7 +68,7 @@ while not end_of_game:
 
     if '_' not in To_fill_word:
         print("You win!")
-        end_of_game = True;
+        end_of_game = True
 
     if Player_life == 0:
         end_of_game = True
