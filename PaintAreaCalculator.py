@@ -1,3 +1,4 @@
+import math
 coverage = 5
 
 height = int(input("Enter the height of your wall  "))
