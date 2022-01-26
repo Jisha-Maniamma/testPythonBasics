@@ -7,8 +7,7 @@ def prime_checker(num):
         if (num % i) == 0:
             return "This is not prime"
         # break
-    else:
-        return "this is prime"
+    return "this is prime"
 
 
 print(f"{prime_checker(num=number)}")
