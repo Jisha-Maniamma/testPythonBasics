@@ -5,3 +5,9 @@ direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
 text = input("Type your message:\n").lower()
 shift = int(input("Type the shift number:\n"))
 
+def CeasarCipher(direction,text,shift):
+    if(direction=="encode"):
+        print("The encoded message is ")
+    elif(direction=="decode"):
+        print("The Decoded message is ")
+    else:
