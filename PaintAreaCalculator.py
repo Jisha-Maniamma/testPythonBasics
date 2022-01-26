@@ -9,4 +9,4 @@ def PaintCanCalculator(height, width):
     return (height * width) / coverage
 
 
-print(f"You would need no of cans : {round(PaintCanCalculator(height=height, width=width))}")
+print(f"You would need no of cans : {math.ceil(PaintCanCalculator(height=height, width=width))}")
