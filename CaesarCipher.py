@@ -7,8 +7,8 @@ shift = int(input("Type the shift number:\n"))
 def Caesar_Cipher(direction,text,shift):
     if direction == "encode" :
         for a in text:
-            print(alphabet.index(a)+"+"+shift+" = "+int(int(alphabet.index(a))+shift))
-            print(alphabet.pop(alphabet.index(a)+shift))
+            print(f"{alphabet.index(a)}{shift} {int(int(alphabet.index(a))+shift)}")
+            print(f"{alphabet.pop(alphabet.index(a)+shift)}")
 
 
 
