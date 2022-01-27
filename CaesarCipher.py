@@ -4,22 +4,17 @@ alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'
 direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
 text = input("Type your message:\n").lower()
 shift = int(input("Type the shift number:\n"))
-def Caesar_Cipher(direction,text,shift):
-    if direction == "encode" :
-        for a in text:
-            print(f"{alphabet.index(a)}{shift} {int(int(alphabet.index(a))+shift)}")
-            print(f"{alphabet.pop(alphabet.index(a)+shift)}")
 
+
+def Caesar_Cipher(direction, text, shift):
+    if direction == "encode":
+        for a in text:
+            print(f"{alphabet.index(a)}{shift} {int(int(alphabet.index(a)) + shift)}")
+            print(f"{alphabet.pop(alphabet.index(a) + shift)}")
 
 
 if direction == "encode" or direction == "decode":
-   Caesar_Cipher(direction,text,shift)
+    Caesar_Cipher(direction, text, shift)
 
 else:
     print(f"We couldnot help! you typed {direction} and not 'encode'/'decode'")
-
-
-
-
-
-
