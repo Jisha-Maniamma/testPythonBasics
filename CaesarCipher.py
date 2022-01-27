@@ -13,6 +13,7 @@ def Caesar_Cipher(direction, text, shift):
             # print(f"at location {alphabet.index(a)}  new location{int(int(alphabet.index(a)) + shift)}")
             # print(f" new charactpr for {a} -> {alphabet[alphabet.index(a) + shift]}")
             cipherText += alphabet[alphabet.index(a) + shift]
+        print(f"the encoded text is {cipherText}")
 
 
 if direction == "encode" or direction == "decode":
