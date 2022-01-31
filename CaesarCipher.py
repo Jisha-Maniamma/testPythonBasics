@@ -6,6 +6,7 @@ alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'
 direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
 text = input("Type your message:\n").lower()
 shift = int(input("Type the shift number:\n"))
+shift = shift if shift % 26 == 0 else shift % 26
 
 
 def Caesar_Cipher(directions, texts, shifts):
@@ -30,7 +31,10 @@ def Caesar_Cipher1(directions, texts, shifts):
     for a in texts:
         # print(f"at location {alphabet.index(a)}  new location{int(int(alphabet.index(a)) + shift)}")
         # print(f" new charactpr for {a} -> {alphabet[alphabet.index(a) + shift]}")
-        cipherText += alphabet[alphabet.index(a) + shifts]
+        if a in alphabet:
+            cipherText += alphabet[alphabet.index(a) + shifts]
+        else:
+            cipherText +=a
     print(f"the {directions} text is {cipherText}")
 
 
@@ -39,3 +43,7 @@ if direction == "encode" or direction == "decode":
 
 else:
     print(f"We couldnot help! you typed {direction} and not 'encode'/'decode'")
+
+###########
+# 1. long shift number
+# 2. number in the ext
