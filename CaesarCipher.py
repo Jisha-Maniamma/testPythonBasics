@@ -17,23 +17,21 @@ def Caesar_Cipher(directions, texts, shifts):
             cipherText += alphabet[alphabet.index(a) + shifts]
         print(f"the encoded text is {cipherText}")
     else:
-        decriptedText=""
+        decriptedText = ""
         for a in texts:
             decriptedText += alphabet[alphabet.index(a) - shifts]
         print(f"the encoded text is {decriptedText}")
 
+
 def Caesar_Cipher1(directions, texts, shifts):
-
-        cipherText = ""
-        for a in texts:
-            # print(f"at location {alphabet.index(a)}  new location{int(int(alphabet.index(a)) + shift)}")
-            # print(f" new charactpr for {a} -> {alphabet[alphabet.index(a) + shift]}")
-            if directions == "decode":
-                shifts*=-1
-            cipherText += alphabet[alphabet.index(a) + shifts]
-        print(f"the {directions} text is {cipherText}")
-
-
+    cipherText = ""
+    for a in texts:
+        # print(f"at location {alphabet.index(a)}  new location{int(int(alphabet.index(a)) + shift)}")
+        # print(f" new charactpr for {a} -> {alphabet[alphabet.index(a) + shift]}")
+        if directions == "decode":
+            shifts *= -1
+        cipherText += alphabet[alphabet.index(a) + shifts]
+    print(f"the {directions} text is {cipherText}")
 
 
 if direction == "encode" or direction == "decode":
