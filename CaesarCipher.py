@@ -3,16 +3,7 @@ alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'
             'q', 'r', 's', 't', 'u',
             'v', 'w', 'x', 'y', 'z']
 Should_continue = True
-while Should_continue:
-    direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
-    text = input("Type your message:\n").lower()
-    shift = int(input("Type the shift number:\n"))
-    shift = shift if shift % 26 == 0 else shift % 26
-    result = input("If you want to continue type 'yes' or else to exit type 'no'")
-    if result=='no':
-        Should_continue=False
-    else:
-        Should_continue=True
+
 
 
 def Caesar_Cipher(directions, texts, shifts):
@@ -43,13 +34,23 @@ def Caesar_Cipher1(directions, texts, shifts):
             cipherText += a
     print(f"the {directions} text is {cipherText}")
 
-
-
-if direction == "encode" or direction == "decode":
+while Should_continue:
+    direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
+    text = input("Type your message:\n").lower()
+    shift = int(input("Type the shift number:\n"))
+    shift = shift if shift % 26 == 0 else shift % 26
     Caesar_Cipher1(direction, text, shift)
+    result = input("If you want to continue type 'yes' or else to exit type 'no'")
+    if result=='no':
+        Should_continue=False
+    else:
+        Should_continue=True
 
-else:
-    print(f"We couldnot help! you typed {direction} and not 'encode'/'decode'")
+# if direction == "encode" or direction == "decode":
+#     Caesar_Cipher1(direction, text, shift)
+#
+# else:
+#     print(f"We couldnot help! you typed {direction} and not 'encode'/'decode'")
 
 
 
