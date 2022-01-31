@@ -43,6 +43,7 @@ while Should_continue:
     result = input("If you want to continue type 'yes' or else to exit type 'no'")
     if result=='no':
         Should_continue=False
+        print("Good Bye!")
     else:
         Should_continue=True
 
