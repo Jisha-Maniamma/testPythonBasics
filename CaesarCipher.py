@@ -8,6 +8,11 @@ while Should_continue:
     text = input("Type your message:\n").lower()
     shift = int(input("Type the shift number:\n"))
     shift = shift if shift % 26 == 0 else shift % 26
+    result = input("If you want to continue type 'yes' or else to exit type 'no'")
+    if result=='no':
+        Should_continue=False
+    else:
+        Should_continue=True
 
 
 def Caesar_Cipher(directions, texts, shifts):
@@ -39,13 +44,14 @@ def Caesar_Cipher1(directions, texts, shifts):
     print(f"the {directions} text is {cipherText}")
 
 
+
 if direction == "encode" or direction == "decode":
     Caesar_Cipher1(direction, text, shift)
 
 else:
     print(f"We couldnot help! you typed {direction} and not 'encode'/'decode'")
 
-Should_continue = input("If you want to continue type 'yes' or else to exit type 'no'")
+
 
 ###########
 # 1. long shift number
