@@ -13,6 +13,11 @@ print(proramming_Dicitonary)
 a = {}
 proramming_Dicitonary = {}
 print(proramming_Dicitonary)
-
+######## ahange or add new
 proramming_Dicitonary["Bug"] = "again and again"
 print(proramming_Dicitonary)
+
+######## acess full irctory
+for thing in proramming_Dicitonary:
+    print(thing)
+    print(proramming_Dicitonary[thing])
