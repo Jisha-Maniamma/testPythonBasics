@@ -11,7 +11,7 @@ proramming_Dicitonary["Bug"] = "again and again"
 print(proramming_Dicitonary)
 
 a = {}
-proramming_Dicitonary={}
+proramming_Dicitonary = {}
 print(proramming_Dicitonary)
 
 proramming_Dicitonary["Bug"] = "again and again"
