@@ -8,7 +8,12 @@ travel_log = {
 
 travel_log_new={
     "India":{
-        "cities_visited":["TVM","MAA"],
+        "cities_visited":["Thirvananthapuram","Madras"],
+        "Number_of_visits":100
+    },
+
+    "Japan":{
+        "cities_visited":["Tokyo","Fukuoka"],
         "Number_of_visits":100
     }
 }
