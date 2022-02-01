@@ -7,7 +7,7 @@ travel_log = {
 
 travel_log_new = {
     "India": {
-        "cities_visited": ["Thirvananthapuram", "Madras"],
+        "cities_visited": ["Thiruvananthapuram", "Madras"],
         "Number_of_visits": 100
     },
 
