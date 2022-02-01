@@ -14,10 +14,13 @@ travel_log_new_ = [
 
 
 def add_travel_history(country, visits, cities):
-    new_country = {}
-    new_country["country"]=country
-    new_country["cities_visited"]=cities
-    new_country["Number_of_visits"]=visits
+    #new_country = {}
+    # new_country["country"]=country
+    # new_country["cities_visited"]=cities
+    # new_country["Number_of_visits"]=visits
+    # travel_log_new_.append(new_country)
+
+    new_country = {"country": country, "cities_visited": cities, "Number_of_visits": visits}
     travel_log_new_.append(new_country)
 
 add_travel_history(country="USA", visits=1, cities=["Denver", "San Fransisco"])
