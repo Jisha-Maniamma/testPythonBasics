@@ -13,7 +13,7 @@ def addBiddingInfo(name, price):
 
 print("logo............................")
 continuloop = True
-while (continuloop):
+while continuloop:
     name = input("Enter the bidder name ")
     price = int(input("enetr the price"))
     addBiddingInfo(name=name, price=price)
@@ -27,7 +27,7 @@ def getWinner():
     greatest = 0
     winnername = ""
     for i in range(len(bidderInfo)):
-        if (bidderInfo[i]["price"] > greatest):
+        if bidderInfo[i]["price"] > greatest:
             greatest = bidderInfo[i]["price"]
             winnername = bidderInfo[i]["name"]
     print(f"{greatest} {winnername}")
