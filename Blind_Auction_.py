@@ -19,13 +19,18 @@ while(continuloop):
 #add to dictonary
 
 def getWinner():
-   for i in range len:
-       for c in user:
-          print(user[c])
+    greatest=0
+    winnername=""
+    for i in range(len(bidderInfo)):
+       if(bidderInfo[i]["price"]>greatest):
+           greatest=bidderInfo[i]["price"]
+           winnername=bidderInfo[i]["name"]
+    print(f"{greatest} {winnername}")
 
 
 if not continuloop:
     getWinner()
+
 
 print(bidderInfo)
 
