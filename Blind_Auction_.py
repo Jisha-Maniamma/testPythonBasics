@@ -1,11 +1,5 @@
 
 from os import system
-
-
-print("logo............................")
-name=input("Enter the bidder name ")
-price=int(input("enetr the price"))
-#add to dictonary
 bidderInfo=[]
 def addBiddingInfo(name, price):
     bidderInfo_new={}
@@ -13,9 +7,25 @@ def addBiddingInfo(name, price):
     bidderInfo_new["price"]=price
     bidderInfo.append(bidderInfo_new)
 
-otherUser=input("type 'yes' if some one wants to alo bid")
+print("logo............................")
+continuloop=True
+while(continuloop):
+    name=input("Enter the bidder name ")
+    price=int(input("enetr the price"))
+    addBiddingInfo(name=name,price=price)
+    otherUser=input("type 'yes' if some one wants to also bid, else type 'no' ")
+    continuloop=True if(otherUser=='yes') else False
 
-addBiddingInfo(name=name,price=price)
+#add to dictonary
+
+def getWinner():
+   for i in range len:
+       for c in user:
+          print(user[c])
+
+
+if not continuloop:
+    getWinner()
 
 print(bidderInfo)
 
