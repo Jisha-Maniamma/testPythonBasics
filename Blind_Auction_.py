@@ -2,13 +2,14 @@ from os import system
 
 bidderInfo = []
 
-
+bidderInfo1 ={}
 def addBiddingInfo(name, price):
     bidderInfo_new = {}
     bidderInfo_new["name"] = name
     bidderInfo_new["price"] = price
     # bidderInfo_new = {"name": name, "price": price}
     bidderInfo.append(bidderInfo_new)
+    bidderInfo1[name]=price;
 
 
 print("logo............................")
@@ -37,6 +38,7 @@ if not continuloop:
     getWinner()
 
 print(bidderInfo)
+print(bidderInfo1)
 
 # ask if anyon else
 #########if ys clear screen if no find highest bid and show
