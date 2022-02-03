@@ -15,7 +15,7 @@ print("logo............................")
 continuloop = True
 while continuloop:
     name = input("Enter the bidder name ")
-    price = int(input("enetr the price"))
+    price = int(input("what is your bid? $"))
     addBiddingInfo(name=name, price=price)
     otherUser = input("type 'yes' if some one wants to also bid, else type 'no' ")
     continuloop = True if (otherUser == 'yes') else False
