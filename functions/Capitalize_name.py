@@ -1,3 +1,4 @@
+
 Firstname = input("Enter your first name  ").lower()
 Lastname = input("Enter our last name  ").lower()
 
