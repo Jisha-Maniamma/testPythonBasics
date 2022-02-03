@@ -1,5 +1,6 @@
 #   Program to capitaliz ach starting word of your name
 Firstname = input("Enter your first name  ").lower()
+MiddleName = input("Enter our middle name  ").lower()
 Lastname = input("Enter our last name  ").lower()
 
 
