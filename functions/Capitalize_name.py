@@ -4,11 +4,10 @@ MiddleName = input("Enter our middle name  ").lower()
 Lastname = input("Enter our last name  ").lower()
 
 
-
-def capitalize(Firstname, midddleName,Lastname):
+def capitalize(Firstname, midddleName, Lastname):
     return Firstname[0].upper() + Firstname[1:len(Firstname)] \
-           + (" " + midddleName[0].upper() + midddleName[1:len(midddleName)] if midddleName!="" else "")\
+           + (" " + midddleName[0].upper() + midddleName[1:len(midddleName)] if midddleName != "" else "") \
            + " " + Lastname[0].upper() + Lastname[1:len(Lastname)]
 
 
-print(capitalize(Firstname,MiddleName, Lastname))
+print(capitalize(Firstname, MiddleName, Lastname))
