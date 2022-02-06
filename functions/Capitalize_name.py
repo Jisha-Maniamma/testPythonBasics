@@ -5,6 +5,12 @@ Lastname = input("Enter our last name  ").lower()
 
 
 def capitalize(firstname, midddlename, lastname):
+    """
+    :param firstname: first NAME
+    :param midddlename: middle NAME
+    :param lastname:last NAME
+    :return: capitalized NAME
+    """
     if firstname == "" and midddlename == "" and lastname == "":
         return "you didnot provide valid inputs!"
     return firstname[0].upper() + firstname[1:len(firstname)] \
