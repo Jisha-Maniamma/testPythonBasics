@@ -20,22 +20,25 @@ operator["-"] = sub
 operator["*"] = mul
 operator["/"] = div
 
+
 # print(operator)
+def calculatorMain():
+    num1 = int(input("Enter the first number "))
 
-num1 = int(input("Enter the first number "))
+    choice = "y"
+    while choice == "y":
+        num2 = int(input("Enter the Second number "))
+        print("which of the operation do you wnt to do")
+        for op in operator:
+            print(op)
+        symbol_selected = input("select the symbol  ")
+        calculator = operator[symbol_selected]
+        answer = calculator(num1, num2)
+        print(f"{num1}{symbol_selected}{num2}={answer}")
+        choice = input("type 'y' to continue using the last result")
+        if choice != 'y':
+            calculatorMain()
+        else:
+            num1 = answer
 
-choice = "y"
-while choice == "y":
-    num2 = int(input("Enter the Second number "))
-    print("which of the operation do you wnt to do")
-    for op in operator:
-        print(op)
-    symbol_selected = input("select the symbol  ")
-    calculator = operator[symbol_selected]
-    answer = calculator(num1, num2)
-    print(f"{num1}{symbol_selected}{num2}={answer}")
-    choice = input("type 'y' to continue using the last result")
-    if choice != 'y':
-        print("exiting..")
-    else:
-        num1 = answer
+calculatorMain()
