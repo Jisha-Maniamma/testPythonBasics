@@ -23,11 +23,11 @@ operator["/"] = div
 
 # print(operator)
 def calculatorMain():
-    num1 = int(input("Enter the first number "))
+    num1 = float(input("Enter the first number "))
 
     choice = "y"
     while choice == "y":
-        num2 = int(input("Enter the Second number "))
+        num2 = float(input("Enter the Second number "))
         print("which of the operation do you wnt to do")
         for op in operator:
             print(op)
