@@ -23,9 +23,10 @@ operator["/"]=div
 # print(operator)
 
 num1=int(input("Enter the first number "))
-num2=int(input("Enter the Second number "))
+
 choice="y"
 while choice=="y":
+    num2=int(input("Enter the Second number "))
     print("which of the operation do you wnt to do")
     for op in operator:
         print(op)
@@ -38,4 +39,3 @@ while choice=="y":
         print("exiting..")
     else:
         num1=answer
-        num2=int(input("Enter the Second number "))
