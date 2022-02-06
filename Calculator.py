@@ -15,7 +15,9 @@ def div(n1, n2):
 
 
 operator={}
-operator["add"]="+"
-operator["sub"]="-"
-operator["mul"]="*"
-operator["div"]="/"
+operator["+"]=add
+operator["-"]=sub
+operator["*"]=mul
+operator["/"]=div
+
+print(operator)
