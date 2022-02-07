@@ -63,18 +63,14 @@ print(computerCard)
 # Hint 6: Create a function called calculate_score() that takes a List of cards as input
 # and returns the score.
 # Look up the sum() function to help you do this.
-userTotal = 1
+userTotal = 0
 computerTotal = 0
 
-
 def calculate_score():
+    # for i in range(0,10):
     userTotal = sum(userCard)
     computerTotal = sum(computerCard)
 
-
-calculate_score()
-print(userTotal)
-print(computerTotal)
 # Hint 7: Inside calculate_score() check for a blackjack (a hand with only 2 cards: ace + 10) and return 0 instead of
 # the actual score. 0 will represent a blackjack in our game.
 
@@ -100,3 +96,4 @@ print(computerTotal)
 
 # Hint 14: Ask the user if they want to restart the game. If they answer yes, clear the console and start a new game
 # of blackjack and show the logo from art.py.
+calculate_score()
