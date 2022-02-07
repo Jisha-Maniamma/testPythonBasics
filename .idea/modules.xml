@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Functions/Functions.iml" filepath="$PROJECT_DIR$/Functions/Functions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/blackJack/blackJack.iml" filepath="$PROJECT_DIR$/blackJack/blackJack.iml" />
       <module fileurl="file://$PROJECT_DIR$/testPython.iml" filepath="$PROJECT_DIR$/testPython.iml" />
     </modules>
   </component>
