@@ -45,8 +45,10 @@ cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 
 # Hint 4: Create a deal_card() function that uses the List below to *return* a random card.
 # 11 is the Ace.
-userCard=[]
-computerCard=[]
+userCard = []
+computerCard = []
+
+
 def deal_card():
     userCard.append(random.choice(cards))
     userCard.append(random.choice(cards))
@@ -61,7 +63,18 @@ print(computerCard)
 # Hint 6: Create a function called calculate_score() that takes a List of cards as input
 # and returns the score.
 # Look up the sum() function to help you do this.
+userTotal = 0
+computerTotal = 0
 
+
+def calculate_score():
+    userTotal = sum(userCard)
+    computerTotal = sum(computerCard)
+
+
+calculate_score()
+print(userTotal)
+print(computerTotal)
 # Hint 7: Inside calculate_score() check for a blackjack (a hand with only 2 cards: ace + 10) and return 0 instead of
 # the actual score. 0 will represent a blackjack in our game.
 
