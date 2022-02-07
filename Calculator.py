@@ -14,6 +14,7 @@ def div(n1, n2):
     return n1 / n2
 
 
+# operator dictonary
 operator = {}
 operator["+"] = add
 operator["-"] = sub
@@ -40,5 +41,6 @@ def calculatorMain():
             calculatorMain()
         else:
             num1 = answer
+
 
 calculatorMain()
