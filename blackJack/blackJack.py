@@ -45,9 +45,19 @@ cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 
 # Hint 4: Create a deal_card() function that uses the List below to *return* a random card.
 # 11 is the Ace.
+userCard=[]
+computerCard=[]
+def deal_card():
+    userCard.append(random.choice(cards))
+    userCard.append(random.choice(cards))
+    computerCard.append(random.choice(cards))
+    computerCard.append(random.choice(cards))
+
 
 # Hint 5: Deal the user and computer 2 cards each using deal_card() and append().
-
+deal_card()
+print(userCard)
+print(computerCard)
 # Hint 6: Create a function called calculate_score() that takes a List of cards as input
 # and returns the score.
 # Look up the sum() function to help you do this.
