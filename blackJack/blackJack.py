@@ -63,7 +63,7 @@ print(computerCard)
 # Hint 6: Create a function called calculate_score() that takes a List of cards as input
 # and returns the score.
 # Look up the sum() function to help you do this.
-userTotal = 0
+userTotal = 1
 computerTotal = 0
 
 
