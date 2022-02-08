@@ -67,19 +67,19 @@ print(computerCard)
 userTotal = 0
 computerTotal = 0
 
+
 # Hint 7: Inside calculate_score() check for a blackjack (a hand with only 2 cards: ace + 10) and return 0 instead of
 # the actual score. 0 will represent a blackjack in our game.
 def calculate_score():
     # for i in range(0,10):
     userTotal = sum(userCard)
     computerTotal = sum(computerCard)
-    if userTotal>21:
+    if userTotal > 21:
         for i in userCard:
-            if i==11:
+            if i == 11:
                 userCard.remove(i)
                 userCard.append(i)
     # elif computerTotal>21:
-
 
 
 # Hint 8: Inside calculate_score() check for an 11 (ace). If the score is already over 21, remove the 11 and replace
