@@ -55,7 +55,7 @@ def deal_card():
 
 
 # Hint 5: Deal the user and computer 2 cards each using deal_card() and append().
-for _ in range (2):
+for _ in range(2):
     userCard.append(deal_card())
     computerCard.append(deal_card())
 
@@ -72,8 +72,14 @@ computerTotal = 0
 # the actual score. 0 will represent a blackjack in our game.
 def calculate_score(cards):
     totalSum = sum(cards)
-    return totalSum
 
+    if len(cards) == 2 and totalSum == 21:
+        print("Blackjack!")
+        return 0
+    if 11 in cards and totalSum > 21:
+        cards.remove(11)
+        cards.append(1)
+    return totalSum
 
 # Hint 8: Inside calculate_score() check for an 11 (ace). If the score is already over 21, remove the 11 and replace
 # it with a 1. You might need to look up append() and remove().
@@ -97,4 +103,3 @@ def calculate_score(cards):
 
 # Hint 14: Ask the user if they want to restart the game. If they answer yes, clear the console and start a new game
 # of blackjack and show the logo from art.py.
-
