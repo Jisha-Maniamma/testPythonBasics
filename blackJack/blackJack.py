@@ -56,8 +56,10 @@ def deal_card():
 
 # Hint 5: Deal the user and computer 2 cards each using deal_card() and append().
 for _ in range(2):
-    userCard.append(deal_card())
-    computerCard.append(deal_card())
+    # userCard.append(deal_card())
+    # computerCard.append(deal_card())
+    userCard.append(1)
+    computerCard.append(5)
 
 # print(userCard)
 # print(computerCard)
@@ -66,12 +68,13 @@ for _ in range(2):
 # Look up the sum() function to help you do this.
 userTotal = 0
 
-game_ends = False
+game_ends=False
 
 
 def set_game_ends(a):
     global game_ends
     game_ends = a
+
 
 
 def get_game_ends():
@@ -88,13 +91,12 @@ def calculate_score(cards):
         print("Game Ends!")
         set_game_ends(True)
         return 0
-    if 11 in cards and totalSum > 21:
+    elif 11 in cards and totalSum > 21:
         cards.remove(11)
         cards.append(1)
         print("Game Ends!")
         set_game_ends(True)
-    else:
-        set_game_ends(False)
+
     return totalSum
 
 
@@ -103,16 +105,18 @@ def calculate_score(cards):
 
 # Hint 9: Call calculate_score(). If the computer or the user has a blackjack (0) or if the user's score is over 21,
 # then the game ends.
-
-    calculate_score(userCard)
-    calculate_score(computerCard)
-    if not get_game_ends():
-        if input("would you like to continue and dwa another card? type 'y' or 'n' ") == 'y':
-            userCard.append(deal_card())
-           #calculate_score(userCard)
-
 print(userCard)
 print(computerCard)
+calculate_score(userCard)
+calculate_score(computerCard)
+if not get_game_ends():
+    print(game_ends)
+    if input("would you like to continue and dwa another card? type 'y' or 'n' ") == 'y':
+        userCard.append(deal_card())
+        #calculate_score(userCard)
+        calculate_score(userCard)
+        print(userCard)
+        print(computerCard)
 # Hint 10: If the game has not ended, ask the user if they want to draw another card. If yes, then use the deal_card(
 # ) function to add another card to the user_cards List. If no, then the game has ended.
 
