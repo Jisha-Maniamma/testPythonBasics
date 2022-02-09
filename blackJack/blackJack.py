@@ -66,7 +66,7 @@ print(computerCard)
 # Look up the sum() function to help you do this.
 userTotal = 0
 computerTotal = 0
-game_ends=False
+game_ends = False
 
 
 # Hint 7: Inside calculate_score() check for a blackjack (a hand with only 2 cards: ace + 10) and return 0 instead of
@@ -77,16 +77,17 @@ def calculate_score(cards):
     if len(cards) == 2 and totalSum == 21:
         print("Blackjack!")
         print("Game Ends!")
-        game_ends=True
+        game_ends = True
         return 0
     if 11 in cards and totalSum > 21:
         cards.remove(11)
         cards.append(1)
         print("Game Ends!")
-        game_ends=True
+        game_ends = True
     else:
-        game_ends=False
+        game_ends = False
     return totalSum
+
 
 # Hint 8: Inside calculate_score() check for an 11 (ace). If the score is already over 21, remove the 11 and replace
 # it with a 1. You might need to look up append() and remove().
