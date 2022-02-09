@@ -66,6 +66,7 @@ print(computerCard)
 # Look up the sum() function to help you do this.
 userTotal = 0
 computerTotal = 0
+game_ends=False
 
 
 # Hint 7: Inside calculate_score() check for a blackjack (a hand with only 2 cards: ace + 10) and return 0 instead of
@@ -75,10 +76,16 @@ def calculate_score(cards):
 
     if len(cards) == 2 and totalSum == 21:
         print("Blackjack!")
+        print("Game Ends!")
+        game_ends=True
         return 0
     if 11 in cards and totalSum > 21:
         cards.remove(11)
         cards.append(1)
+        print("Game Ends!")
+        game_ends=True
+    else:
+        game_ends=False
     return totalSum
 
 # Hint 8: Inside calculate_score() check for an 11 (ace). If the score is already over 21, remove the 11 and replace
@@ -86,7 +93,8 @@ def calculate_score(cards):
 
 # Hint 9: Call calculate_score(). If the computer or the user has a blackjack (0) or if the user's score is over 21,
 # then the game ends.
-
+calculate_score(userCard)
+calculate_score(computerCard)
 # Hint 10: If the game has not ended, ask the user if they want to draw another card. If yes, then use the deal_card(
 # ) function to add another card to the user_cards List. If no, then the game has ended.
 
