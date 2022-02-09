@@ -11,7 +11,7 @@ logo = """
       |  \/ K|                            _/ |                
       `------'                           |__/           
 """
-print(logo)
+# print(logo)
 # Difficulty Normal 😎: Use all Hints below to complete the project.
 # Difficulty Hard 🤔: Use only Hints 1, 2, 3 to complete the project.
 # Difficulty Extra Hard 😭: Only use Hints 1 & 2 to complete the project.
@@ -59,8 +59,8 @@ for _ in range(2):
     userCard.append(deal_card())
     computerCard.append(deal_card())
 
-print(userCard)
-print(computerCard)
+# print(userCard)
+# print(computerCard)
 # Hint 6: Create a function called calculate_score() that takes a List of cards as input
 # and returns the score.
 # Look up the sum() function to help you do this.
@@ -109,7 +109,7 @@ def calculate_score(cards):
     if not get_game_ends():
         if input("would you like to continue and dwa another card? type 'y' or 'n' ") == 'y':
             userCard.append(deal_card())
-            calculate_score(userCard)
+           #calculate_score(userCard)
 
 print(userCard)
 print(computerCard)
