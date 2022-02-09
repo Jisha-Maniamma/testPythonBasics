@@ -50,17 +50,17 @@ computerCard = []
 
 
 def deal_card():
-    userCard.append(random.choice(cards))
-    userCard.append(random.choice(cards))
-    computerCard.append(random.choice(cards))
-    computerCard.append(random.choice(cards))
+    # userCard.append()
+    return random.choice(cards)
 
 
 # Hint 5: Deal the user and computer 2 cards each using deal_card() and append().
-deal_card()
+for _ in range (2):
+    userCard.append(deal_card())
+    computerCard.append(deal_card())
+
 print(userCard)
 print(computerCard)
-
 # Hint 6: Create a function called calculate_score() that takes a List of cards as input
 # and returns the score.
 # Look up the sum() function to help you do this.
@@ -97,4 +97,4 @@ def calculate_score(cards):
 
 # Hint 14: Ask the user if they want to restart the game. If they answer yes, clear the console and start a new game
 # of blackjack and show the logo from art.py.
-calculate_score()
+
