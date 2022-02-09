@@ -109,6 +109,8 @@ if not get_game_ends():
     if input("would you like to continue and dwa another card? type 'y' or 'n'") == 'y':
         userCard.append(deal_card())
 
+print(userCard)
+print(computerCard)
 # Hint 10: If the game has not ended, ask the user if they want to draw another card. If yes, then use the deal_card(
 # ) function to add another card to the user_cards List. If no, then the game has ended.
 
