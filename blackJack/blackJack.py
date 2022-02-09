@@ -103,11 +103,13 @@ def calculate_score(cards):
 
 # Hint 9: Call calculate_score(). If the computer or the user has a blackjack (0) or if the user's score is over 21,
 # then the game ends.
-calculate_score(userCard)
-calculate_score(computerCard)
-if not get_game_ends():
-    if input("would you like to continue and dwa another card? type 'y' or 'n'") == 'y':
-        userCard.append(deal_card())
+
+    calculate_score(userCard)
+    calculate_score(computerCard)
+    if not get_game_ends():
+        if input("would you like to continue and dwa another card? type 'y' or 'n' ") == 'y':
+            userCard.append(deal_card())
+            calculate_score(userCard)
 
 print(userCard)
 print(computerCard)
