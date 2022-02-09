@@ -66,13 +66,18 @@ print(computerCard)
 # Look up the sum() function to help you do this.
 userTotal = 0
 
-
 game_ends = False
+
+
 def set_game_ends(a):
     global game_ends
-    game_ends=a
+    game_ends = a
+
+
 def get_game_ends():
     return game_ends
+
+
 # Hint 7: Inside calculate_score() check for a blackjack (a hand with only 2 cards: ace + 10) and return 0 instead of
 # the actual score. 0 will represent a blackjack in our game.
 def calculate_score(cards):
@@ -101,9 +106,8 @@ def calculate_score(cards):
 calculate_score(userCard)
 calculate_score(computerCard)
 if not get_game_ends():
-       if input("would you like to continue and dwa another card? type 'y' or 'n'")=='y':
-           userCard.append(deal_card())
-
+    if input("would you like to continue and dwa another card? type 'y' or 'n'") == 'y':
+        userCard.append(deal_card())
 
 # Hint 10: If the game has not ended, ask the user if they want to draw another card. If yes, then use the deal_card(
 # ) function to add another card to the user_cards List. If no, then the game has ended.
