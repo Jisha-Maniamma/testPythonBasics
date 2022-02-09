@@ -109,14 +109,16 @@ print(userCard)
 print(computerCard)
 calculate_score(userCard)
 calculate_score(computerCard)
-if not get_game_ends():
+while not get_game_ends():
 
     if input("would you like to continue and dwa another card? type 'y' or 'n' ") == 'y':
         userCard.append(deal_card())
-        #calculate_score(userCard)
+
         calculate_score(userCard)
         print(userCard)
         print(computerCard)
+
+
 # Hint 10: If the game has not ended, ask the user if they want to draw another card. If yes, then use the deal_card(
 # ) function to add another card to the user_cards List. If no, then the game has ended.
 
@@ -125,7 +127,8 @@ if not get_game_ends():
 
 # Hint 12: Once the user is done, it's time to let the computer play. The computer should keep drawing cards as long
 # as it has a score less than 17.
-
+if calculate_score(computerCard)<17:
+    computerCard.append(deal_card())
 # Hint 13: Create a function called compare() and pass in the user_score and computer_score. If the computer and user
 # both have the same score, then it's a draw. If the computer has a blackjack (0), then the user loses. If the user
 # has a blackjack (0), then the user wins. If the user_score is over 21, then the user loses. If the computer_score
