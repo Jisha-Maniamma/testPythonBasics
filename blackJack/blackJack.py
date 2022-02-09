@@ -110,7 +110,7 @@ print(computerCard)
 calculate_score(userCard)
 calculate_score(computerCard)
 if not get_game_ends():
-    print(game_ends)
+
     if input("would you like to continue and dwa another card? type 'y' or 'n' ") == 'y':
         userCard.append(deal_card())
         #calculate_score(userCard)
